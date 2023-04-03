@@ -9,9 +9,9 @@ let data = window.addEventListener('DOMContentLoaded', ()=> {
 
 } )
 
-var tasks = document.getElementById('tasks')
+let tasks = document.getElementById('tasks')
 
-var submitBtn = document.getElementById('new-task-submit')
+let submitBtn = document.getElementById('new-task-submit')
 submitBtn.addEventListener('click', (e)=> {
     e.preventDefault()
     var inputBar = document.getElementById('new-task-input')
@@ -29,17 +29,17 @@ function createTask(taskData){
         alert('You must add an input')
     } else {
       
-        var task = document.createElement('div')
+        let task = document.createElement('div')
 
-        var content = document.createElement('div')
-        var input = document.createElement('input')
-        var actions = document.createElement('div')
-        var btn1 = document.createElement('button')
-        var btn2 = document.createElement('button')
-        var btn3 = document.createElement('button')
-        var time = document.createElement('small')
+        let content = document.createElement('div')
+        let input = document.createElement('input')
+        let actions = document.createElement('div')
+        let btn1 = document.createElement('button')
+        let btn2 = document.createElement('button')
+        let btn3 = document.createElement('button')
+        let time = document.createElement('small')
 
-        var date = 'created on ' + new Date().toDateString() + ' | ' + new Date().toLocaleTimeString()
+        let date = 'created on ' + new Date().toDateString() + ' | ' + new Date().toLocaleTimeString()
 
         time.textContent = date;
 
